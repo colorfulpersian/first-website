@@ -1,0 +1,140 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-border: #ccc;
+    --color-primary: rgba(126, 213, 111, 0.8);
+    --color-secondary: rgba(40, 180, 131, 0.8);
+    --color-one: #7ed56f;
+    --color-two: #55c57a;
+    --color-three: #28b485;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background-color: whitesmoke;
+    width: 80%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 90vh 70vh 80vh 70vh 130vh 40vh 50vh;
+}
+
+.sections {
+    grid-column: 1/-1;
+    transition: all 1s ease;
+}
+
+.sticky-nav {
+    max-width: 80%;
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.74) !important;
+}
+
+.cookie-message {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #37383d;
+    color: var(--color-white);
+    position: fixed;
+    z-index: 100;
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(8px);
+}
+
+.lazy-img {
+    filter: blur(10px);
+}
+
+.active_dot {
+    opacity: 1 !important;
+    color: var(--color-white);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+#section--2 {
+    padding: 3rem;
+    margin-top: 8rem;
+}
+
+#section--3 {
+    border-top: solid 1px var(--color-border);
+}
+
+#section--4 {
+    border-top: solid 1px var(--color-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section--5 {
+    border-top: solid 1px var(--color-border);
+}
+
+#section--6 {
+    border-top: solid 1px var(--color-border);
+}
+
+#section--7 {
+    border-top: solid 1px var(--color-border);
+    background-image: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+    clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        grid-template-rows: 90vh 100vh 80vh 70vh 130vh 40vh 50vh !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .cards {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .container {
+        grid-template-rows: 120vh 0vh 150vh 70vh 130vh 40vh 80vh !important;
+    }
+}

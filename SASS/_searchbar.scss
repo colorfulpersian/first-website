@@ -1,0 +1,44 @@
+::placeholder {
+    color: black;
+    padding-left: 1rem;
+}
+
+.search-box {
+    background-color: var(--color-white);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    animation: upToDown .7s ease-out;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    border-radius: 3rem;
+    width: 0;
+    border: none;
+    outline: none;
+    transition: all .7s ease;
+    padding: -4rem 1rem;
+    border-radius: 3rem;
+}
+
+.search-icon {
+    color: var(--color-black);
+    font-size: 1.5rem;
+    background-color: var(--color-white);
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    animation: upToDown .7s ease-out;
+    display: inline-block;
+    cursor: pointer;
+    animation: upToDown .7s ease-out;
+}
+
+.search-box:hover .search-input {
+    width: 20rem;
+}
+
+.search-input:focus {
+    width: 20rem;
+}

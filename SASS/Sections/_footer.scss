@@ -1,0 +1,52 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-rows: 1fr;
+    margin-top: 11rem;
+    justify-items: center;
+    text-align: center;
+
+    &-icons {
+        padding-right: 0.5rem;
+    }
+
+    &-links {
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    &-link {
+        color: black;
+    }
+}
+
+.git:hover {
+    color: rgb(79, 0, 110);
+}
+
+.linkedin:hover {
+    color: rgb(37, 47, 180);
+}
+
+.tel:hover {
+    color: rgb(0, 140, 255);
+}
+
+.what:hover {
+    color: rgb(3, 63, 6);
+}
+
+.mail:hover {
+    color: rgb(230, 28, 28);
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        text-align: start;
+        justify-items: start;
+
+        &-text {
+            font-size: 1.5rem;
+        }
+    }
+}

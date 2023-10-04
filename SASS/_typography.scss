@@ -1,0 +1,79 @@
+.content-title-3 {
+    background-image: linear-gradient(to right, var(--color-one), var(--color-two));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.content-text-1 {
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+}
+
+.content-text-2 {
+    font-family: dance;
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    text-transform: capitalize;
+}
+
+.content-title-4 {
+    font-family: libre;
+    padding-top: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.content-title-5 {
+    text-transform: capitalize;
+    font-family: libre;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+
+    &-guide {
+        color: orangered;
+    }
+}
+
+.tabs-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.tabs-text {
+    font-size: 1.7rem;
+}
+
+.content-title-6 {
+    color: var(--color-white);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.form-text {
+    font-size: 1.7rem;
+    color: var(--color-white);
+
+    &-1 {
+        text-align: start;
+        padding-bottom: 0.8rem;
+    }
+
+    &-2 {
+        text-align: start;
+        margin-bottom: 0.8rem;
+    }
+}
